@@ -1,16 +1,19 @@
 {{yield}}
 
-<div class="question-container row">
-  <div class="col-xs-9">
-    <h4>{{question.author}} asks:</h4>
-    <h3>{{question.text}}</h3>
-    <h5>{{question.notes}}</h5>
-  </div>
-  <div class="col-xs-3">
-    <div class="row">
-      <button>Edit</button>
+<div class="question-container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h4>{{question.author}} asks:</h4>
+      <h3>{{question.text}}</h3>
+      <h5>{{question.notes}}</h5>
     </div>
-    <div class="row">
+
+  </div>
+  <div class="row">
+    <div class="col-xs-6">
+      {{edit-question question=question}}
+    </div>
+    <div class="col-xs-6">
       <button>Delete</button>
     </div>
   </div>

@@ -1,1 +1,19 @@
 {{yield}}
+{{#if editQuestion}}
+  <h3>Edit Question</h3>
+  <form>
+    <div class="form-group">
+      {{input class="form-control" value=text placeholder=question.text}}
+    </div>
+    <div class="form-group">
+      {{textarea class="form-control" value=notes placeholder=question.notes}}
+    </div>
+    <div class="form-group">
+      {{input class="form-control" value=author placeholder=question.author}}
+    </div>
+    <button {{action 'sendSave'}}>Submit</button>
+  </form>
+  <button {{action 'cancel'}}>Cancel</button>
+{{else}}
+  <button {{action 'questionEditShow'}}>Edit Question</button>
+{{/if}}

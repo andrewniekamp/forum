@@ -6,15 +6,15 @@ export default Ember.Route.extend({
   },
   actions: {
     saveAnswer(params) {
-      //Create a new answer with the information from our parameters, save it to the database, and call it "newAnswer".
+      //Create a new answer called newAnswer from parameters, save to database
       var newAnswer = this.store.createRecord('answer', params);
-      //Refer to the question in those parameters as "question".
+      //Call the question in those params: "question"
       var question = params.question;
-      // Retrieve the list of answers located in "question", and add "newAnswer" to that list.
+      //Retrieve answers located in "question", and add "newAnswer" to list
       question.get('answers').addObject(newAnswer);
-      // Save "newAnswer", so it remembers what question it belongs in.
+      //Save "newAnswer" so it is tied to the question it belongs to
       newAnswer.save().then(function() {
-        // Wait until "newAnswer" has finished saving, then save "question'" too, so it remembers it contains "newAnswer".
+        //Wait until "newAnswer" has saved, then save "question'" too, so it remembers it contains "newAnswer".
         return question.save();
       });
       // Afterwards, take us to the page displaying details for "question".
