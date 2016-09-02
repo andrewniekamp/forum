@@ -1,16 +1,24 @@
 {{yield}}
-{{#if addAnswer}}
-  <h3>Submit Answer</h3>
-  <form>
+<div class="add-answer-container">
+  {{#if addAnswer}}
+  <button class="btn option-btn" {{action 'cancel'}}>Add Answer</button>
+  <form class="add-answer-form">
     <div class="form-group">
       {{textarea class="form-control" value=text placeholder="Answer, like: \"You're on the right track! Light interacts with water in the air to form a spectrum of colorful light!!!! zOMG it's teh bestorz, rite?!!1\""}}
     </div>
     <div class="form-group">
       {{input class="form-control" value=author placeholder="Author - Your name here."}}
     </div>
-    <button {{action 'sendSave'}}>Submit Answer</button>
+    <div class="row">
+      <div class="col-xs-6">
+        <button class="btn submit-btn" {{action 'sendSave'}}>Submit Answer</button>
+      </div>
+      <div class="col-xs-6">
+        <button class="btn cancel-btn" {{action 'cancel'}}>Cancel</button>
+      </div>
+    </div>
   </form>
-  <button {{action 'cancel'}}>Cancel</button>
-{{else}}
-  <button {{action 'answerFormShow'}}>Add Answer</button>
-{{/if}}
+  {{else}}
+  <button class="btn option-btn" {{action 'answerFormShow'}}>Add Answer</button>
+  {{/if}}
+</div>

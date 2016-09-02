@@ -10,20 +10,29 @@
 
   </div>
   <div class="row">
-    <div class="col-xs-6">
+    <div class="col-xs-12">
       {{edit-question question=question editQuestionSave="editQuestionSave"}}
-    </div>
-    <div class="col-xs-6">
-      <button>Delete</button>
     </div>
   </div>
 </div>
 
 {{#each question.answers as |answer|}}
-  <div class="answer-container">
-    <div class="answer-text-container">
-      <p class="answer-text">{{answer.text}}</p>
+  <div class="answer-container row">
+    <div class="row">
+      <div class="col-xs-2 arrow-container">
+        <span class="glyphicon glyphicon-share-alt reply-arrow" aria-hidden="true"></span>
+      </div>
+      <div class="answer-text-container col-xs-10">
+        <p class="answer-text">{{answer.text}}</p>
+      </div>
     </div>
-    <p class="answer-author">- {{answer.author}}</p>
+    <div class="row">
+      <div class="col-xs-2 arrow-container">
+
+      </div>
+      <div class="col-xs-10 answer-row">
+        <p>- {{answer.author}}</p>
+      </div>
+    </div>
   </div>
 {{/each}}
