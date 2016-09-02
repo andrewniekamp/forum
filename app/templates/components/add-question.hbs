@@ -1,19 +1,27 @@
 {{yield}}
-{{#if addQuestion}}
-  <h3>Add a Question</h3>
-  <form>
-    <div class="form-group">
-      {{input class="form-control" value=text placeholder="Question, like: \"How do rainbows??\""}}
-    </div>
-    <div class="form-group">
-      {{textarea class="form-control" value=notes placeholder="Notes, like: \"I know it has to do with light... but how do?!?\""}}
-    </div>
-    <div class="form-group">
-      {{input class="form-control" value=author placeholder="Author - Your name here."}}
-    </div>
-    <button {{action 'sendSave'}}>Submit</button>
-  </form>
-  <button {{action 'cancel'}}>Cancel</button>
-{{else}}
-  <button {{action 'questionFormShow'}}>New Question</button>
-{{/if}}
+<div class="add-container">
+  {{#if addQuestion}}
+    <button class="btn option-btn" {{action 'cancel'}}>New Question</button>
+      <form class="edit-question-form add-form">
+          <div class="form-group">
+            {{input class="form-control" value=text placeholder="Question, like: \"How do rainbows??\""}}
+          </div>
+          <div class="form-group">
+            {{textarea class="form-control" value=notes placeholder="Notes, like: \"I know it has to do with light... but how do?!?\""}}
+          </div>
+          <div class="form-group">
+            {{input class="form-control" value=author placeholder="Author - Your name here."}}
+          </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <button class="btn option-btn" {{action 'sendSave'}}>Submit</button>
+          </div>
+          <div class="col-xs-6">
+            <button class="btn cancel-btn" {{action 'cancel'}}>Cancel</button>
+          </div>
+        </div>
+      </form>
+  {{else}}
+    <button class="btn option-btn" {{action 'questionFormShow'}}>New Question</button>
+  {{/if}}
+</div>
