@@ -4,3 +4,30 @@ body {
   background-repeat: no-repeat;
   background-color: #c93a59;
 }
+
+.question-container {
+  background-color: rgba(255, 255, 255, 0.8);;
+  padding: 20px;
+  margin: 20px 5%;
+  border-bottom: 6px solid #ebc85e;
+  border-right: 4px solid #ebc85e;
+}
+
+.answer-container {
+  background-color: rgba(255, 255, 255, 0.8);;
+  padding: 0;
+  margin: 10px 5% 10px 15%;
+  border-bottom: 6px solid #e87352;
+  border-right: 4px solid #e87352;
+}
+
+.answer-text-container {
+  padding: 20px;
+}
+
+.answer-author {
+  background-color: #e87352;
+  margin: 0;
+  font-style: italic;
+  padding: 1% 1% 0 3%;
+}
