@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       this.set('addQuestion', true);
     },
     cancel() {
-      this.set('addQuestion', true);
+      this.set('addQuestion', false);
       this.set('text', '');
       this.set('notes', '');
       this.set('author', '');
