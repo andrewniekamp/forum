@@ -25,12 +25,17 @@
         <span class="glyphicon glyphicon-share-alt reply-arrow" aria-hidden="true"></span>
       </div>
       <div class="answer-text-container col-xs-10">
-        <p class="answer-text">{{answer.text}}</p>
+        <div class="col-xs-9">
+          <p class="answer-text">{{answer.text}}</p>
+        </div>
+        <div class="col-xs-3">
+          <button class="btn destroy-btn" {{action 'sendDeleteAnswer' answer}}>CENSOR</button>
+        </div>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-2 arrow-container">
-
+        <!-- Leave this empty -->
       </div>
       <div class="col-xs-10 answer-row">
         <p>- {{answer.author}}</p>
