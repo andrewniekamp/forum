@@ -1,5 +1,6 @@
 {{outlet}}
 <h1>hello</h1>
+{{add-question sendQuestion="saveQuestion"}}
 <div class="questions-container">
   {{#each model.questions as |question|}}
     <h3>{{#link-to 'question' question.id}}{{question.text}}{{/link-to}}</h3>

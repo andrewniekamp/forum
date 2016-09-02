@@ -19,7 +19,7 @@ export default Ember.Component.extend({
         author: this.get('author')
       };
       this.set('addQuestion', false);
-      this.sendAction('sendSave', params);
+      this.sendAction('sendQuestion', params);
       this.set('text', '');
       this.set('notes', '');
       this.set('author', '');
