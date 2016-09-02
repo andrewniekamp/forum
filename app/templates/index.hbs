@@ -1,1 +1,7 @@
 {{outlet}}
+<h1>hello</h1>
+<div class="questions-container">
+  {{#each model.questions as |question|}}
+    <p>{{question.author}} asks: {{question.text}}</p>
+  {{/each}}
+</div>
