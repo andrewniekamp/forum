@@ -20,9 +20,11 @@ export default Ember.Route.extend({
       // Afterwards, take us to the page displaying details for "question".
       this.transitionTo('question', params.question);
     },
+    //Passed up through two components - edit and tile
     editQuestionSave(question, params) {
       Object.keys(params).forEach(function(key) {
-        if (params[key] !== undefined) {
+        //Add > 0 to prevent accidental empyting of input when selecting
+        if (params[key] !== undefined && params[key].length > 0) {
           question.set(key, params[key]);
         }
       });
