@@ -3,13 +3,13 @@
   <button class="btn option-btn" {{action 'cancel'}}>Edit Question</button>
   <form class="edit-question-form">
     <div class="form-group">
-      {{input class="form-control" value=text placeholder=question.text}}
+      {{input class="form-control" value=question.text}}
     </div>
     <div class="form-group">
-      {{textarea class="form-control" value=notes placeholder=question.notes}}
+      {{textarea class="form-control" value=question.notes}}
     </div>
     <div class="form-group">
-      {{input class="form-control" value=author placeholder=question.author}}
+      {{input class="form-control" value=question.author}}
     </div>
     <div class="row">
       <div class="col-xs-6">
