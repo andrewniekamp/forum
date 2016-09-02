@@ -12,5 +12,13 @@ export default Ember.Component.extend({
       this.set('notes', '');
       this.set('author', '');
     },
+    editQuestionSave(question) {
+      var params = {
+        text: this.get('text'),
+        notes: this.get('notes'),
+        author: this.get('author')
+      };
+      this.sendAction('editQuestionSave', question, params)
+    }
   }
 });
