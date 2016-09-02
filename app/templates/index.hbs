@@ -1,9 +1,11 @@
 {{outlet}}
 <h1>Questionogrofier</h1>
 {{add-question sendQuestion="saveQuestion"}}
-<div class="questions-container">
-  {{#each model.questions as |question|}}
-    <h3>{{#link-to 'question' question.id}}{{question.text}}{{/link-to}}</h3>
-    <h6>Asked by: {{question.author}}</h6>
-  {{/each}}
-</div>
+{{#each model.questions as |question|}}
+  {{#link-to 'question' question.id}}
+    <div class="question-container">
+      <h3>{{question.text}}</h3>
+      <h6>Asked by: {{question.author}}</h6>
+    </div>
+  {{/link-to}}
+{{/each}}
