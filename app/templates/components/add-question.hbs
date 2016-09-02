@@ -1,0 +1,15 @@
+{{yield}}
+{{#if addQuestion}}
+  <h3>Add a Question</h3>
+  <form>
+    <div class="form-group">
+      {{input value=text placeholder="Question - Example: How do rainbows??"}}
+    </div>
+    <div class="form-group">
+      {{textarea value=notes placeholder="Notes - Example: I know it has to do with light... but how do??"}}
+    </div>
+    <button {{action 'sendSave'}}></button>
+  </form>
+{{else}}
+  <button {{action 'questionFormShow'}}>New Question</button>
+{{/if}}
