@@ -1,12 +1,14 @@
 {{outlet}}
-{{add-question sendQuestion="saveQuestion"}}
-{{#each model.questions as |question|}}
+<div class="container">
+  {{add-question sendQuestion="saveQuestion"}}
+  {{#each model.questions as |question|}}
   <div class="question-padder">
     {{#link-to 'question' question.id}}
-      <div class="question-container index-questions">
-        <h3 class="question-text-link">{{question.text}}</h3>
-        <h6 class="question-by-link">Asked by: {{question.author}}</h6>
-      </div>
+    <div class="question-container index-questions">
+      <h3 class="question-text-link">{{question.text}}</h3>
+      <h6 class="question-by-link">Asked by: {{question.author}}</h6>
+    </div>
     {{/link-to}}
   </div>
-{{/each}}
+  {{/each}}  
+</div>

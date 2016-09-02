@@ -1,10 +1,11 @@
-<div class="container-fluid header row">
-  <div class="col-xs-3">
-    {{#link-to 'index' class="navbar-brand"}}<img id="logo" alt="Blue Question Block" src="/assets/images/questionblockblue.png">{{/link-to}}
+<div class="container-fluid header">
+  <div class="col-xs-5 col-sm-4">
+    {{#link-to 'index' class="navbar-brand"}}<div id="logo"></div>{{/link-to}}
   </div>
-  <div class="col-xs-9">
+  <div class="col-xs-7 sol-sm-8">
+    <h2>Query Simu-tron</h2>
+    <h5>The Cutting Edge of Simple Question/Answer Simulation Technology</h5>
   </div>
 </div>
-<div class="container">
-  {{outlet}}
-</div>
+
+{{liquid-outlet}}

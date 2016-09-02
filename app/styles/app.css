@@ -1,18 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
 body {
   background-image: url('/assets/images/questionblockpink.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #c93a59;
-  min-width: 500px;
+  min-width: 600px;
+  font-family: 'Orbitron', sans-serif;
 }
 
 #logo {
-  width: 100px;
+  width: 150px;
+  height: 150px;
+  background-image: url('/assets/images/questionblockblue.png');
+  background-size: cover;
+}
+
+#logo:hover {
+  background-image: url('/assets/images/questionblockpink.png');
 }
 
 .header {
   background-color: rgba(255, 255, 255, 0.9);
-  height: 130px;
+  height: 180px;
 }
 
 .question-container {
@@ -103,6 +113,8 @@ body {
   background-color: #70E4EF;
   color: black;
   border-radius: 0;
+  height: 45px;
+  font-size: 20px;
 }
 
 .cancel-btn {
