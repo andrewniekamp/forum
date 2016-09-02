@@ -73,6 +73,10 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
+.answer-text {
+  font-size: 20px;
+}
+
 .answer-row {
   background-color: #92c223;
   margin: 0;
