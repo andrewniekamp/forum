@@ -1,0 +1,20 @@
+{
+  "questions": [{
+    "author": "Randall",
+    "text": "Where am I?",
+    "notes": "I don't recognize anyone here..."
+  }, {
+    "author": "Samson",
+    "text": "Any PAX tickets for sale?",
+    "notes": "Offering $5 per day, firm... OBO."
+  }],
+  "answers": [{
+    "author": "Victoria",
+    "text": "I will sell mine for 5 smackers each day.",
+    "question": "1"
+  }, {
+    "author": "Jokulhaups",
+    "text": "Good luck with that...",
+    "question": "1"
+  }]
+}
