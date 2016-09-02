@@ -3,9 +3,9 @@
 {{#each model.questions as |question|}}
   <div class="question-padder">
     {{#link-to 'question' question.id}}
-      <div class="question-container">
-        <h3>{{question.text}}</h3>
-        <h6>Asked by: {{question.author}}</h6>
+      <div class="question-container index-questions">
+        <h3 class="question-text-link">{{question.text}}</h3>
+        <h6 class="question-by-link">Asked by: {{question.author}}</h6>
       </div>
     {{/link-to}}
   </div>
