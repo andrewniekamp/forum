@@ -1,5 +1,6 @@
 {{outlet}}
+<div class="container">
+  {{question-tile question=model editQuestionSave="editQuestionSave" sendDeleteAnswer="deleteAnswer"}}
 
-{{question-tile question=model editQuestionSave="editQuestionSave" sendDeleteAnswer="deleteAnswer"}}
-
-{{add-answer sendAnswer="saveAnswer" question=model}}
+  {{add-answer sendAnswer="saveAnswer" question=model}}
+</div>

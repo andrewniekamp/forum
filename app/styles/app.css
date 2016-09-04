@@ -5,7 +5,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   /*background-color: #c93a59;*/
-  min-width: 700px;
+  /*min-width: 700px;*/
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -26,7 +26,11 @@ body {
 
 .header {
   background-color: rgba(255, 255, 255, 0.9);
-  height: 180px;
+  min-height: 180px;
+}
+
+.title {
+  font-size: 50px;
 }
 
 .question-container {
@@ -152,4 +156,36 @@ body {
 
 .option-btn:hover, .submit-btn:hover {
   color: white;
+}
+
+.mobile-btn {
+  visibility: hidden;
+}
+
+.center {
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .destroy-btn {
+    visibility: hidden;
+  }
+  .mobile-btn {
+    visibility: visible;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
+  .title {
+    padding-top: 120px;
+  }
+  .header {
+    text-align: center;
+  }
 }

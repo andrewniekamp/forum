@@ -11,6 +11,7 @@ This is a question and answer message board where a user submits a question and 
 * Users can click on a question to view additional information.
 * Users can add and edit questions.
 * Users can add answers to a question (one to many data relationship, one question to many answers). Answers are added and viewed on the same page as the particular question.
+* Users can 'CENSOR' (delete) questions and answers.
 
 #### Technologies Used:
 
