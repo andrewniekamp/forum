@@ -41,7 +41,7 @@ body {
 }
 
 .question-padder {
-  padding: 20px 5%;
+  padding: 20px 15%;
 }
 
 .question-link {
@@ -64,7 +64,7 @@ body {
 
 .answer-container {
   padding: 0;
-  margin: 5%;
+  margin: 2% 15%;
   overflow: hidden;
 }
 
@@ -101,8 +101,12 @@ body {
 }
 
 .add-container {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.add-answer-container {
+  min-height: 300px;
 }
 
 .add-form {
